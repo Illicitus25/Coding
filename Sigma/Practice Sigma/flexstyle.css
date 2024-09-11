@@ -1,0 +1,19 @@
+.a{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5%;
+    background-color: #808080;
+    color: black;
+    font-size: 50px;
+}
+.b{
+    height: 400px;
+    width: 400px;
+    border: 2px solid #cee8e5;
+    border-radius: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}

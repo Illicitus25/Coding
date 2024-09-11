@@ -1,0 +1,6 @@
+x0=(int)(input("x0"))
+x1=(int)(input("x1"))
+y0=(int)(input("y0"))
+y1=(int)(input("y1"))
+cal=((x0-x1)**2)+((y0-y1)**2)
+print("distance is ",cal)

@@ -1,0 +1,106 @@
+*
+{
+     margin: 0;
+     padding: 0;
+}
+#check{
+    display: none;
+}
+.main_box{
+    background-image: url("photo.jpg"); 
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one{
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    z-index: 1;
+}
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255,0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255,0.5);
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255,0.5);
+    height: 60px;
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar_menu .menu{
+    width: 100%;
+    top: 80px;
+    position: absolute;
+}
+.btn_two{
+    font-size: 25px;
+    color: grey;
+    line-height: 60px;
+    position: absolute;
+    left: 250px;
+    /* opacity: 0; */
+}
+li{
+    margin-top: 6px;
+    padding: 14px 20px;
+}
+i,a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: default;
+}
+i{
+    padding-right: 8px;
+}
+.social_media {
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+.social_media i{
+    opacity: 0.5;
+    padding: 0 5px;
+    color: white;
+}
+li:hover{
+    box-shadow: 0 0 6px rgba(255, 255, 255,0.5);
+}
+
+.btn_two i:hover{
+transform: scale(1.2);
+cursor: pointer;
+transition: all 0.1s linear;
+}
+.btn_one i:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 0.1s linear;
+    }
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
+#check:checked ~.sidebar_menu{
+left: 0;
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+    }
