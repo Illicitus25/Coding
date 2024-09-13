@@ -1,3 +1,1 @@
- // if(currSum<0){
-            //     currSum=0;
-            // }
+arr

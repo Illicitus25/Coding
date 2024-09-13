@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 class prime{
     public static void main(String main[]){
         Scanner sc=new Scanner(System.in);
@@ -23,6 +23,14 @@ class prime{
         }
         for(int i=5;i*i<=n;i+=6){
             if(n%i==0||n%(i+2)==0){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static boolean isPrimesqrt(int n){
+        for(int i=2;i<Math.sqrt(n);i++){
+            if(n%i==0){
                 return false;
             }
         }
