@@ -7,10 +7,14 @@ public class minInStack {
         int min=Integer.MAX_VALUE;
         Scanner sc=new Scanner(System.in);
         while(true){
-            System.out.print("Enter an element (or 'q' to quit): ");
+            System.out.print("Enter an element (or 'q' to quit) (or 'p' to pop): ");
             String input=sc.nextLine();
             if(input.equalsIgnoreCase("q")){
                 break;
+            }
+            if(input.equalsIgnoreCase("q")){
+                arr.pop();
+                minarr.pop();
             }
             if(Integer.parseInt(input)<min){
                 min=Integer.parseInt(input);
