@@ -10,6 +10,7 @@ public class reverseLL {
         list.add(3);
         list.add(4);
         list.add(5);
+        int l=list.size()/2;
         for(int i=0;i<list.size();i++){
             System.out.print(list.get(i)+"->");
         }
@@ -21,6 +22,5 @@ public class reverseLL {
         for(int i=0;i<list1.size();i++){
             System.out.print(list1.get(i)+"->");
         }
-
     }
 }
