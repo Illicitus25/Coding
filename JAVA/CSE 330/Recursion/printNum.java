@@ -1,13 +1,13 @@
 
     class printNum {
-        public static void printNum(int n){
+        public static void printN(int n){
             if(n==0){
                 return;
             }
-            printNum(n-1);
+            printN(n-1);
             System.out.println(n);
         }
         public static void main(String[] args) {
-            printNum(5);
+            printN(5);
         }
     }
