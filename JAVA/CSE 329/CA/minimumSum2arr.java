@@ -12,7 +12,7 @@
 import java.util.Arrays;
 public class minimumSum2arr {
     public static void main(String[] args) {
-        int arr1[]={1, 4, 2};
+        int arr1[]={p};
         int arr2[]={5, 4, 4};
         int arr3[]=new int[arr1.length];
         int s=0;
